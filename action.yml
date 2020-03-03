@@ -1,0 +1,5 @@
+name: 'Zeebe Backport'
+description: 'Backport Zeebe PRs for patch releases'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
