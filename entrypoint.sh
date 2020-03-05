@@ -1,4 +1,4 @@
-#!/bin/sh -le
+#!/bin/sh -lex
 
 set -o pipefail
 
@@ -15,6 +15,8 @@ check_command() {
       exit 1
     fi
 }
+
+echo "::debug::$(env)"
 
 check_env GITHUB_REPOSITORY
 check_env GITHUB_EVENT_PATH
